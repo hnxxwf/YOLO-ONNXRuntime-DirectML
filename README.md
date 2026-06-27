@@ -2,7 +2,7 @@
 
 **A high-speed YOLO inference library powered by ONNX Runtime and DirectML.**
 
-Language: [Chinese](docs/Chinese.md)
+Language: [简体中文](docs/Chinese.md)
 
 `YoloOrtDml` packages YOLO inference into a C++ shared library. OpenCV and ONNX Runtime are linked as static dependencies, so downstream projects can use the exported CMake package directly and only copy the required runtime DLLs.
 
