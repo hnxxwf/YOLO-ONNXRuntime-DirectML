@@ -6,6 +6,9 @@ Language: [English](../README.md)
 
 `YoloOrtDml` 将 YOLO 推理封装成 C++ 动态库。OpenCV 和 ONNX Runtime 会以静态库形式打入 `YoloOrtDml`，你的项目可以直接通过导出的 CMake 包接入，只需要复制必要的运行时 DLL。
 
+> **性能提示：** 将你的 ONNX 模型转化成 fp16 的 ONNX 模型后，预处理推理速度更快。
+> 你可以写一个 Python 脚本来完成转化。
+
 ## 功能特点
 
 - 基于 DirectML 加速，适合 Windows 平台上的高速 YOLO 推理。

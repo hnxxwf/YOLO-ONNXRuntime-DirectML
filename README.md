@@ -6,6 +6,9 @@ Language: [简体中文](docs/Chinese.md)
 
 `YoloOrtDml` packages YOLO inference into a C++ shared library. OpenCV and ONNX Runtime are linked as static dependencies, so downstream projects can use the exported CMake package directly and only copy the required runtime DLLs.
 
+> **Performance tip:** Convert your ONNX model to an FP16 ONNX model for faster preprocessing and inference.
+> You can write a Python script to perform the conversion.
+
 ## Highlights
 
 - DirectML acceleration for fast YOLO inference on Windows.
