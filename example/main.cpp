@@ -42,8 +42,8 @@ void printUsage(const char *program)
 
 int main(int argc, char **argv)
 {
-    const std::string defaultModelPath = R"(../../assert/yolov6n_320_fp16.onnx)";
-    const std::string defaultImagePath = R"(../../assert/cat.png)";
+    const std::string defaultModelPath = R"(../../assets/yolov6n_320_fp16.onnx)";
+    const std::string defaultImagePath = R"(../../assets/cat.png)";
 
     if (argc > 1 && (std::string(argv[1]) == "-h" || std::string(argv[1]) == "--help")) {
         printUsage(argv[0]);

@@ -25,7 +25,7 @@ Language: [English](../README.md)
 
 **实测结果：** YOLOv6 可进入 **1 ms** 推理耗时，其他模型都在 **1.5 ms** 左右。
 
-![YOLO 推理结果](../assert/result.png)
+![YOLO 推理结果](../assets/result.png)
 
 ## 依赖版本
 
@@ -59,7 +59,7 @@ Language: [English](../README.md)
 
 编译前请将 `third_party.zip` 解压到项目根目录下的 `third_party` 文件夹中：
 
-![third_party 文件夹结构](../assert/2.png)
+![third_party 文件夹结构](../assets/2.png)
 
 > **运行时说明：** 项目编译并 install 打包后可得到 `YoloOrtDml` 动态库。OpenCV 和 ONNX Runtime 静态库已经打入 `YoloOrtDml`，使用时无需再次导入 OpenCV 和 ONNX Runtime，也无需把它们的运行时 DLL 复制到 exe 目录下。`DirectML.dll` 仍然需要复制到 exe 目录下，因为 DirectML 运行时依赖无法打入 `YoloOrtDml` 动态库。
 

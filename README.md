@@ -25,7 +25,7 @@ Language: [简体中文](docs/Chinese.md)
 
 **Measured result:** YOLOv6 can reach around **1 ms** inference latency, while the other supported models are around **1.5 ms**.
 
-![YOLO inference result](assert/result.png)
+![YOLO inference result](assets/result.png)
 
 ## Dependencies
 
@@ -59,7 +59,7 @@ OpenCV and ONNX Runtime are required as static libraries, not the official dynam
 
 Extract `third_party.zip` into the `third_party` folder in the project root before building:
 
-![third_party folder layout](assert/2.png)
+![third_party folder layout](assets/2.png)
 
 > **Runtime note:** After build and install, OpenCV and ONNX Runtime are already linked into `YoloOrtDml`. You do not need to import them again in your own project or copy their runtime DLLs manually. `DirectML.dll` still needs to be copied to the executable directory because it cannot be embedded into `YoloOrtDml`.
 
